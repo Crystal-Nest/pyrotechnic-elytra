@@ -11,7 +11,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
  * Injects into {@link FireworkRocketEntity} to prevent firework boost damage when flying.
  */
 @Mixin(FireworkRocketEntity.class)
-public class FireworkRocketEntityMixin {
+public abstract class FireworkRocketEntityMixin {
   /**
    * Redirects the call to {@link LivingEntity#hurt(DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage()}.<br />
    * Prevents firework damage when boosting one's flight.
