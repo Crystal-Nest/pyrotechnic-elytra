@@ -1,11 +1,13 @@
 package it.crystalnest.pyrotechnic_elytra;
 
 import net.fabricmc.api.ModInitializer;
+import org.jetbrains.annotations.ApiStatus;
 
 /**
  * Mod loader.
  */
-public class ModLoader implements ModInitializer {
+@ApiStatus.Internal
+public final class ModLoader implements ModInitializer {
   @Override
   public void onInitialize() {
     CommonModLoader.init();

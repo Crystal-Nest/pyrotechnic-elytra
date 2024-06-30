@@ -1,13 +1,13 @@
 package it.crystalnest.pyrotechnic_elytra;
 
-import it.crystalnest.pyrotechnic_elytra.platform.Services;
-import it.crystalnest.pyrotechnic_elytra.platform.services.PlatformHelper;
+import org.jetbrains.annotations.ApiStatus;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
  * Common shared constants across all loaders.
  */
+@ApiStatus.Internal
 public final class Constants {
 	private Constants() {}
 
@@ -20,9 +20,4 @@ public final class Constants {
 	 * Mod logger.
 	 */
 	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
-
-	/**
-	 * Provides information about what platform the mod is running on.
-	 */
-	public static final PlatformHelper PLATFORM = Services.load(PlatformHelper.class);
 }
