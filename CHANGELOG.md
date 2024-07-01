@@ -9,9 +9,10 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 
 - Nothing new.
 
-## [1.0.0] - yyyy/mm/dd
+## [1.0.0] - 2024/07/01
 
-- Release notes...
+- First release.
+- Using fireworks made with firework stars to boost elytra flight doesn't deal any damage anymore.
 
 [Unreleased]: https://github.com/crystal-nest/pyrotechnic-elytra
 [README]: https://github.com/crystal-nest/pyrotechnic-elytra#readme
