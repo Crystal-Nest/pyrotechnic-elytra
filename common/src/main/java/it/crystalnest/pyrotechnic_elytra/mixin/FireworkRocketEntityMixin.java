@@ -8,21 +8,21 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Redirect;
 
 /**
- * Mixin for {@link FireworkRocketEntity} to prevent firework damage when flying.
+ * Injects into {@link FireworkRocketEntity} to prevent firework boost damage when flying.
  */
 @Mixin(FireworkRocketEntity.class)
-public class FireworkRocketEntityMixin {
-    /**
-     * <br>
-     * Removes the call to {@code hurt} and prevents the damage.
-     *
-     * @param shooter Shooter of the firework.
-     * @param damageSource Firework damage source.
-     * @param damage Damage amount.
-     * @return {@code false} because no damage will take place.
-     */
-    @Redirect(method = "dealExplosionDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
-    private boolean preventHurt(LivingEntity shooter, DamageSource damageSource, float damage) {
-        return false;
-    }
+public abstract class FireworkRocketEntityMixin {
+  /**
+   * Redirects the call to {@link LivingEntity#hurt(DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage()}.<br />
+   * Prevents firework damage when boosting one's flight.
+   *
+   * @param instance entity owning the redirected method.
+   * @param source damage source.
+   * @param amount damage amount.
+   * @return {@code false} as no damage is being dealt.
+   */
+  @Redirect(method = "dealExplosionDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
+  private boolean redirectHurt(LivingEntity instance, DamageSource source, float amount) {
+    return false;
+  }
 }

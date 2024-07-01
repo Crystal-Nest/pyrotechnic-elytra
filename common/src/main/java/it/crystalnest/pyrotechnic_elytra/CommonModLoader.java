@@ -1,15 +1,15 @@
 package it.crystalnest.pyrotechnic_elytra;
+import org.jetbrains.annotations.ApiStatus;
 
 /**
  * Common mod loader.
  */
+@ApiStatus.Internal
 public final class CommonModLoader {
   private CommonModLoader() {}
 
   /**
-   * Initialize operations common across loaders.
+   * Initialize common operations across loaders.
    */
-  public static void init() {
-    // Initialize common operations here.
-  }
+  public static void init() {}
 }

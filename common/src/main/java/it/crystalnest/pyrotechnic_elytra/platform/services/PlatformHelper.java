@@ -1,7 +1,7 @@
 package it.crystalnest.pyrotechnic_elytra.platform.services;
 
-import it.crystalnest.pyrotechnic_elytra.platform.model.Environment;
-import it.crystalnest.pyrotechnic_elytra.platform.model.Platform;
+import it.crystalnest.cobweb.platform.model.Environment;
+import it.crystalnest.cobweb.platform.model.Platform;
 
 /**
  * Platform specific helper.
@@ -35,6 +35,6 @@ public interface PlatformHelper {
    * @return The name of the environment type.
    */
   default Environment getEnvironment() {
-    return isDevEnv() ? Environment.DEV : Environment.PROD;
+    return isDevEnv() ? Environment.DEVELOPMENT : Environment.PRODUCTION;
   }
 }

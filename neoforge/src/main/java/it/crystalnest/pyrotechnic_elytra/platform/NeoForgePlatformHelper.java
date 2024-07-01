@@ -1,6 +1,6 @@
 package it.crystalnest.pyrotechnic_elytra.platform;
 
-import it.crystalnest.pyrotechnic_elytra.platform.model.Platform;
+import it.crystalnest.cobweb.platform.model.Platform;
 import it.crystalnest.pyrotechnic_elytra.platform.services.PlatformHelper;
 import net.neoforged.fml.ModList;
 import net.neoforged.fml.loading.FMLLoader;
@@ -8,7 +8,7 @@ import net.neoforged.fml.loading.FMLLoader;
 /**
  * NeoForge platform helper.
  */
-public class NeoForgePlatformHelper implements PlatformHelper {
+public final class NeoForgePlatformHelper implements PlatformHelper {
   @Override
   public Platform getPlatformName() {
     return Platform.NEOFORGE;
