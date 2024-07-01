@@ -1,4 +1,4 @@
-![Pyrotechnic Elytra banner](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/banner.png "Pyrotechnic Elytra banner")
+![Pyrotechnic Elytra banner](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/banner.gif "Pyrotechnic Elytra banner")
 
 ---
 
@@ -16,7 +16,8 @@
 
 Wherever you fly, create a fireworks show for everyone to see!  
 Firework rockets with any color, effect, or shape can now be used to boost your flight!  
-![Flight](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/flight.png "Pyrotechnic Flight")
+![Day Flight](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/day-flight.gif "Pyrotechnic Day Flight")  
+![Night Flight](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/night-flight.gif "Pyrotechnic Night Flight")
 
 ## **License and right of use**
 
