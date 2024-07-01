@@ -15,7 +15,8 @@
 ## **Description**
 
 Wherever you fly, create a fireworks show for everyone to see!  
-Firework rockets with any color, effect, or shape can now be used to boost your flight!  
+Firework rockets with any color, effect, or shape can now be used to boost your flight!
+
 ![Day Flight](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/day-flight.gif "Pyrotechnic Day Flight")  
 ![Night Flight](https://raw.githubusercontent.com/crystal-nest/mod-fancy-assets/main/pyrotechnic-elytra/night-flight.gif "Pyrotechnic Night Flight")
 
