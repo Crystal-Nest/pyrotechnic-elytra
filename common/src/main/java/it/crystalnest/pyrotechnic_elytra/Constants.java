@@ -9,15 +9,15 @@ import org.slf4j.LoggerFactory;
  */
 @ApiStatus.Internal
 public final class Constants {
-	private Constants() {}
+  /**
+   * Mod id.
+   */
+  public static final String MOD_ID = "pyrotechnic_elytra";
 
-	/**
-	 * Mod id.
-	 */
-	public static final String MOD_ID = "pyrotechnic_elytra";
+  /**
+   * Mod logger.
+   */
+  public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	/**
-	 * Mod logger.
-	 */
-	public static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
+  private Constants() {}
 }
