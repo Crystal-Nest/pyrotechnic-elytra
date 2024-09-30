@@ -13,6 +13,10 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 
 - Added support for 1.21.1.
 
+## [v1.0.0] - 2024/07/10
+
+- Ported to 1.21.
+
 ## [v1.0.0] - 2024/07/01
 
 - First release.
