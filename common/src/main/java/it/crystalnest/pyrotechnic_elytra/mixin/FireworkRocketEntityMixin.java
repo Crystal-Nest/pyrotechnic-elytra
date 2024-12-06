@@ -1,5 +1,6 @@
 package it.crystalnest.pyrotechnic_elytra.mixin;
 
+import net.minecraft.server.level.ServerLevel;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.projectile.FireworkRocketEntity;
@@ -13,16 +14,17 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(FireworkRocketEntity.class)
 public abstract class FireworkRocketEntityMixin {
   /**
-   * Redirects the call to {@link LivingEntity#hurt(DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage()}.<br />
+   * Redirects the call to {@link LivingEntity#hurt(DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage(ServerLevel)}.<br />
    * Prevents firework damage when boosting one's flight.
    *
    * @param instance entity owning the redirected method.
+   * @param level server level.
    * @param source damage source.
    * @param amount damage amount.
    * @return {@code false} as no damage is being dealt.
    */
-  @Redirect(method = "dealExplosionDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurt(Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
-  private boolean redirectHurt(LivingEntity instance, DamageSource source, float amount) {
+  @Redirect(method = "dealExplosionDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurtServer(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
+  private boolean redirectHurtServer(LivingEntity instance, ServerLevel level, DamageSource source, float amount) {
     return false;
   }
 }
