@@ -9,6 +9,10 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 
 - Nothing new.
 
+## [v1.0.1] - 2024/12/06
+
+- Fix crash in 1.21.3.
+
 ## [v1.0.0] - 2024/11/29
 
 - Port to 1.21.3.
@@ -29,4 +33,5 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 [Unreleased]: https://github.com/crystal-nest/pyrotechnic-elytra
 [README]: https://github.com/crystal-nest/pyrotechnic-elytra#readme
 
+[v1.0.1]: https://github.com/crystal-nest/pyrotechnic-elytra/releases?q=1.0.1
 [v1.0.0]: https://github.com/crystal-nest/pyrotechnic-elytra/releases?q=1.0.0
