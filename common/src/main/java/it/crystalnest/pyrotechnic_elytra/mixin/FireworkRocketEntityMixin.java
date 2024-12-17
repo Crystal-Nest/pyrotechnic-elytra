@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.Redirect;
 @Mixin(FireworkRocketEntity.class)
 public abstract class FireworkRocketEntityMixin {
   /**
-   * Redirects the call to {@link LivingEntity#hurt(DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage(ServerLevel)}.<br />
+   * Redirects the call to {@link LivingEntity#hurtServer(ServerLevel, DamageSource, float)} in the method {@link FireworkRocketEntity#dealExplosionDamage(ServerLevel)}.<br />
    * Prevents firework damage when boosting one's flight.
    *
    * @param instance entity owning the redirected method.
