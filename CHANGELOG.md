@@ -9,6 +9,10 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 
 - Nothing new.
 
+## [v1.0.1] - 2025/04/dd
+
+- Ported to 1.21.5.
+
 ## [v1.0.1] - 2025/02/02
 
 - Ported to 1.21.4.
