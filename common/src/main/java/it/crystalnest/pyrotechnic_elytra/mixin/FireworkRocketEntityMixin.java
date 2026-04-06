@@ -20,11 +20,11 @@ public abstract class FireworkRocketEntityMixin {
    * @param instance entity owning the redirected method.
    * @param level server level.
    * @param source damage source.
-   * @param amount damage amount.
+   * @param damage damage amount.
    * @return {@code false} as no damage is being dealt.
    */
   @Redirect(method = "dealExplosionDamage", at = @At(value = "INVOKE", target = "Lnet/minecraft/world/entity/LivingEntity;hurtServer(Lnet/minecraft/server/level/ServerLevel;Lnet/minecraft/world/damagesource/DamageSource;F)Z", ordinal = 0))
-  private boolean redirectHurtServer(LivingEntity instance, ServerLevel level, DamageSource source, float amount) {
+  private boolean redirectHurtServer(LivingEntity instance, ServerLevel level, DamageSource source, float damage) {
     return false;
   }
 }
