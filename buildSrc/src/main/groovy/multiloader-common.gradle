@@ -187,7 +187,7 @@ publisher {
     repo = "$github_user/$mod_id_kebab"
     tag = "v${project.version}"
     displayName("v${project.version}")
-    target = minecraft_version
+    target = providers.gradleProperty("releaseCommit").getOrElse(minecraft_version)
     createTag = true
     createRelease = true
     updateRelease = true
