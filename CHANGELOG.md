@@ -9,6 +9,11 @@ and this project adheres to [Crystal Nest Semantic Versioning](https://crystalne
 
 - Nothing new.
 
+## [v1.0.1] - 2026/11/dd
+
+- Ported to 26.3.
+- Updated to Cobweb 2.0.0.
+
 ## [v1.0.1] - 2025/12/31
 
 - Ported to 1.21.11.
